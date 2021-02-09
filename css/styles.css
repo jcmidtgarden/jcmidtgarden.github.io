@@ -25,6 +25,11 @@ margin: 0;
 padding-left: 0;
 }
 
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
 /* Media queries - XS to L */
 
 /* Extra Small Devices, Phones */
