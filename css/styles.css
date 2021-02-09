@@ -25,9 +25,11 @@ margin: 0;
 padding-left: 0;
 }
 
-.navbar-toggler {
-  border: none;
-  outline: none;
+@media (max-width: 1000px) {
+    .navbar-toggler {
+      border: none;
+      outline: none;
+    }
 }
 
 /* Media queries - XS to L */
