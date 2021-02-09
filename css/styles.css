@@ -1,0 +1,186 @@
+html, body
+{margin: auto;
+height: 100vh;}
+
+/* Fonts */
+h1, h2, h3, h4, p {
+  font-family: 'Lato', sans-serif;
+}
+
+.gallery-header {
+  font-family: 'Lato', sans-serif !important;
+}
+
+p {margin: 0;}
+
+.navbar a {
+  font-family: 'Lato', sans-serif !important;
+  font-size: 1.3em;
+}
+
+ul
+{
+list-style-type: none;
+margin: 0;
+padding-left: 0;
+}
+
+/* Media queries - XS to L */
+
+/* Extra Small Devices, Phones */
+    @media only screen and (min-width : 12.5em) {
+body {
+  width: 99%;
+  margin:auto;
+}
+    }
+
+/* Large Devices, Tablets, computers */
+
+    @media (min-width:75em)
+    {
+
+      body {
+        margin: auto;
+        width: 65%;
+      }
+      .carousel-inner {max-width: 70%;
+      margin:auto;}
+    }
+
+/* @media (min-width: 1405px) {
+  .container-fluid{
+    width: 1000px;
+  }
+} */
+
+/* @media screen and (max-height: 1920px) {
+.carousel-inner {
+max-width: 1000px;
+margin: auto;
+align-items: center;
+}
+} */
+
+/* @media screen and (max-height: 1920px) {
+#gallery-grid {
+max-width: 1000px;
+margin: auto;
+}
+} */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.nav-item {
+   text-align: right;
+   padding-right: 0.3125em;
+}
+
+/* navbarDropdown color; */
+.navbar .dropdown-menu {
+  background-color: white;
+  font-size: 0.8em;
+  padding-top: 0;
+}
+
+.dropdown li a:hover {
+background-color:white;
+color:#605754;
+font-weight: bold;}
+
+/* .dropdown:hover>.dropdown-menu {
+ display: block;
+} */
+
+.dropdown-menu {
+    border: solid;
+    border-radius: 0;
+    border-width: 1px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    text-align: right;
+    align-items: flex-end;
+}
+
+/* Center align - About */
+.jumbotron .vertical-center {
+  margin-bottom: 0; /* Remove the default bottom margin of .jumbotron */
+}
+
+.vertical-center {
+  min-height: calc(100% - 20em); /* You might also want to use
+                        'height' property instead.
+
+                        Note that for percentage values of
+                        'height' or 'min-height' properties,
+                        the 'height' of the parent element
+                        should be specified explicitly.
+
+                        In this case the parent of '.vertical-center'
+                        is the <body> element */
+
+  /* Make it a flex container */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  /* Align the bootstrap's container vertically */
+        -ms-box-align : center;
+    -webkit-box-align : center;
+  -webkit-align-items : center;
+       -moz-box-align : center;
+       -ms-flex-align : center;
+          align-items : center;
+
+  /* In legacy web browsers such as Firefox 9
+     we need to specify the width of the flex container */
+  width: 100%;
+
+  /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
+     hence the bootstrap's container won't be aligned to the center anymore.
+
+     Therefore, we should use the following declarations to get it centered again */
+             -ms-box-pack : center;
+         -webkit-box-pack : center;
+            -moz-box-pack : center;
+            -ms-flex-pack : center;
+  -webkit-justify-content : center;
+          justify-content : center;
+}
+
+.container {
+  background-color: white;
+  color: black;
+}
+
+.email {
+  color:black;
+}
+
+.email:hover {
+  color:gray;
+}
+
+/* Border on gallery images */
+/* .img-fluid {
+  border: solid !important;
+  border-width: 0.2px !important;
+  border-color: black !important;
+} */
+
+footer {
+  text-align: right;
+  padding: 0 0.5em 0.5em 0;
+  font-size: 0.7em;
+}
