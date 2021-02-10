@@ -229,7 +229,7 @@
     parentEl: "body",
 
     // Hide browser vertical scrollbars; use at your own risk
-    hideScrollbar: true,
+    hideScrollbar: false,
 
     // Focus handling
     // ==============
