@@ -154,7 +154,7 @@ body.compensate-for-scrollbar {
 }
 
 .fancybox-slide--image {
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 44px 0;
 }
 

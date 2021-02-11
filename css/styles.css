@@ -1,7 +1,13 @@
-html, body
-{margin: auto;
+body
+{
 height: 100vh;
-padding-bottom: 29px;}
+padding-bottom: 29px;
+margin: auto;}
+
+.compensate-for-scrollbar
+{
+    margin: auto !important;
+}
 
 /* Fonts */
 h1, h2, h3, h4, p {
@@ -42,12 +48,11 @@ padding-left: 0;
 /* Media queries - XS to L */
 
 /* Extra Small Devices, Phones */
-    @media only screen and (min-width : 12.5em) {
+    /* @media only screen and (min-width : 12.5em) {
 body {
   width: 99%;
-  margin:auto;
 }
-    }
+    } */
 
 /* Large Devices, Tablets, computers */
 
