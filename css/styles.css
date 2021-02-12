@@ -127,14 +127,16 @@ font-weight: bold;}
 } */
 
 .dropdown-menu {
-    border: solid;
-    border-radius: 0;
-    border-width: 1px;
+    border: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
     text-align: right;
     align-items: flex-end;
+}
+
+.dropdown-menu a {
+  padding: 0.2em;
 }
 
 /* Center align - About */

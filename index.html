@@ -166,8 +166,10 @@
 
   <script>
     var $hamburger = $(".hamburger");
+    var $dropdown = $(".nav-link.dropdown-toggle, .dropdown-menu");
     $hamburger.on("click", function(e) {
       $hamburger.toggleClass("is-active");
+      $dropdown.toggleClass("show");
       // Do something else, like open/close menu
     });
   </script>
