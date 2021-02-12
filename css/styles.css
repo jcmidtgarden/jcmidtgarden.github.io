@@ -45,6 +45,13 @@ padding-left: 0;
     }
 }
 
+button:focus {
+
+outline: none;
+outline: 5px auto -webkit-focusring-color;
+
+}
+
 /* Media queries - XS to L */
 
 /* Extra Small Devices, Phones */
