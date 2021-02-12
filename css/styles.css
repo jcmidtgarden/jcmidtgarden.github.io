@@ -26,10 +26,18 @@ pre {
 
 p {margin: 0;}
 
+/* NAVBAR start */
+
 .navbar a {
   font-family: 'Lato', sans-serif !important;
   font-size: 1.3em;
 }
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+/* NAVBAR end */
 
 ul
 {
