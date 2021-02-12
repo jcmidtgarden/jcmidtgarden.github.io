@@ -65,15 +65,27 @@
         </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="index.html">Home</a>
           </li>
-          <li class="nav-item dropdown">
+
+          <li class="nav-item dropdown d-none d-md-block">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Works
             </a>
             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="gallery1.html">2018-2020</a></li>
+              <li><a class="dropdown-item" href="#">γραφικός</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown show d-md-none">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+              Works
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right show" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="gallery1.html">2018-2020</a></li>
               <li><a class="dropdown-item" href="#">γραφικός</a></li>
             </ul>
@@ -166,10 +178,8 @@
 
   <script>
     var $hamburger = $(".hamburger");
-    var $dropdown = $(".nav-link.dropdown-toggle, .dropdown-menu");
     $hamburger.on("click", function(e) {
       $hamburger.toggleClass("is-active");
-      $dropdown.toggleClass("show");
       // Do something else, like open/close menu
     });
   </script>

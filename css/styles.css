@@ -54,13 +54,6 @@ outline: 5px auto -webkit-focusring-color;
 
 /* Media queries - XS to L */
 
-/* Extra Small Devices, Phones */
-    /* @media only screen and (min-width : 12.5em) {
-body {
-  width: 99%;
-}
-    } */
-
 /* Large Devices, Tablets, computers */
 
     @media (min-width:75em)
@@ -73,27 +66,6 @@ body {
       .carousel-inner {max-width: 70%;
       margin:auto;}
     }
-
-/* @media (min-width: 1405px) {
-  .container-fluid{
-    width: 1000px;
-  }
-} */
-
-/* @media screen and (max-height: 1920px) {
-.carousel-inner {
-max-width: 1000px;
-margin: auto;
-align-items: center;
-}
-} */
-
-/* @media screen and (max-height: 1920px) {
-#gallery-grid {
-max-width: 1000px;
-margin: auto;
-}
-} */
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 html::-webkit-scrollbar {
