@@ -99,8 +99,8 @@ html {
 
 .dropdown li a:hover {
 background-color:white;
-color:#605754;
-font-weight: bold;}
+font-style: italic;
+}
 
 /* .dropdown:hover>.dropdown-menu {
  display: block;
