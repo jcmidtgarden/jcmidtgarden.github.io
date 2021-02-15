@@ -4,13 +4,15 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <title>About — J.C. Midtgarden</title>
+  <title>Grafikk — J.C. Midtgarden</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
+  <!-- Fancybox plugin-->
+  <link href="css/jquery.fancybox.min.css" rel="stylesheet">
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@0;1&display=swap" rel="stylesheet">
@@ -40,6 +42,8 @@
 
 </head>
 
+<!-- Header start -->
+
 <body>
   <nav class="navbar navbar-expand-md navbar-light bg-white">
     <div class="container-fluid">
@@ -63,7 +67,7 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="gallery1.html">2018-2020</a></li>
-              <li><a class="dropdown-item" href="gallery2.html">Grafikk</a></li>
+              <li><a class="dropdown-item" href="#">Grafikk</a></li>
             </ul>
           </li>
 
@@ -73,84 +77,89 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-right show" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="gallery1.html">2018-2020</a></li>
-              <li><a class="dropdown-item" href="#">Grafikk</a></li>
+              <li><a class="dropdown-item" href="gallery2.html">Grafikk</a></li>
             </ul>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="jumbotron vertical-center">
-
-    <div class="container text-center">
-      <h2>Jens Christian Midtgarden</h2>
-      <div class="row">
-        <div class="col-md-12">
-          <ul class="">
-            <li>
-              <img src="images/mail.png" alt=""><br>
-              <img src="images/oslo.png" alt=""><br>
-            </li>
-            <li>
-              <br><a class="email" id="mm" href="mailto:nospam@thanks.com">Show mail</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
+  <div class="container-fluid gallery-header">
+    <h3>Grafikk</h3>
   </div>
 
-  <footer class="footer fixed-bottom">
-    <small>&copy; 2021 J.C. Midtgarden. Design by A. Indregard</small>
-  </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <!--Grid row-->
+  <div class="row">
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!--Grid column-->
+    <div class="col-lg-6 col-md-12 mb-4">
 
-  <script>
-    $(function() {
-      $("a#mm").click(function(e) {
-        console.log('Fired');
-        var secret = function() {
-          return atob('amVucy5taWR0Z2FyZGVuQGdtYWlsLmNvbQ')
-        };
-        $(this).attr("href", 'mailto:' + secret());
-        $(this).text(secret());
-        $(this).off("click");
-        e.preventDefault();
+      <div alt=""><a href="images/grafikk/grafikk_1_md.jpg" data-fancybox="gallery"><img class="img-fluid mb-4" src="images/grafikk/grafikk_1_md.jpg"></a></div>
+
+      <div alt=""><a href="images/grafikk/grafikk_akilles_md.jpg" data-fancybox="gallery"><img class="img-fluid mb-4" src="images/grafikk/grafikk_akilles_md.jpg"></a></div>
+
+      <div alt=""><a href="images/grafikk/grafikk_3_md.jpg" data-fancybox="gallery"><img class="img-fluid mb-4" src="images/grafikk/grafikk_3_md.jpg"></a></div>
+
+    </div>
+    <!--Grid column-->
+
+    <!-- Grid column-->
+    <div class="col-lg-6 col-md-6 mb-4">
+
+      <div alt=""><a href="images/grafikk/grafikk_bolt_md.jpg" data-fancybox="gallery"><img class="img-fluid mb-4" src="images/grafikk/grafikk_bolt_md.jpg"></a></div>
+
+      <div alt=""><a href="images/grafikk/grafikk_2_md.jpg" data-fancybox="gallery"><img class="img-fluid mb-4" src="images/grafikk/grafikk_2_md.jpg"></a></div>
+
+      <div alt=""><a href="images/grafikk/grafikk_kollage_md.jpg" data-fancybox="gallery"><img class="img-fluid mb-4" src="images/grafikk/grafikk_kollage_md.jpg"></a></div>
+
+    </div>
+    <!--Grid column-->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Fancybox plugin script -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+
+    <script>
+      $('[data-fancybox]').fancybox({
+        protect: true,
+        buttons: [
+          'zoom',
+          'thumbs',
+          'close'
+        ]
       });
-    });
-  </script>
 
-  <script>
-    (function($) {
-      $(document).on('contextmenu', 'img', function() {
-        return false;
-      })
-    })(jQuery);
-  </script>
+      (function($) {
+        $(document).on('contextmenu', 'img', function() {
+          return false;
+        })
+      })(jQuery);
+    </script>
 
-  <script>
-    var $hamburger = $(".hamburger");
-    $hamburger.on("click", function(e) {
-      $hamburger.toggleClass("is-active");
-      // Do something else, like open/close menu
-    });
-  </script>
-  <!-- Hide all to page load -->
-  <script>
-    $(document).ready(function() {
-      document.getElementsByTagName("html")[0].style.visibility = "visible";
-    });
-  </script>
+    <script>
+      var $hamburger = $(".hamburger");
+      $hamburger.on("click", function(e) {
+        $hamburger.toggleClass("is-active");
+        // Do something else, like open/close menu
+      });
+    </script>
 
+    <!-- Hide all to page load -->
+    <script>
+      $(document).ready(function() {
+        document.getElementsByTagName("html")[0].style.visibility = "visible";
+      });
+    </script>
 
 </body>
 
